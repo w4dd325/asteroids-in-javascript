@@ -1,7 +1,7 @@
 class AsteroidField {
     constructor() {
         this.asteroidSizes = [8, 16, 32];
-        this.nAsteroids = 2;
+        this.nAsteroids = 10;
         this.asteroids = [];
         this.asteroidsPerSplit = 3;
         this.minVelocity = 5;
