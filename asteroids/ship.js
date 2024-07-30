@@ -4,11 +4,11 @@ class Ship {
         this.y = y;
         this.heading = 0;
         this.velocity = 0;
-        this.size = 20;
+        this.size = 30;
         this.rockets = [];
         this.maxRockets = 10;
         this.maxRocketAge = 5;
-        this.maxVelocity = 50;
+        this.maxVelocity = 100;
         this.minVelocity = -25;
     }
     
@@ -22,13 +22,13 @@ class Ship {
     
     accelerate() {
         if (this.velocity < this.maxVelocity) {
-            this.velocity += 5;
+            this.velocity += 50;
         }
     }
     
     brake() {
         if (this.velocity > this.minVelocity) {
-            this.velocity -= 5;
+            this.velocity -= 50;
         }
     }
     

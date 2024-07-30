@@ -3,7 +3,7 @@ class Rocket {
         this.x = x;
         this.y = y;
         this.heading = heading;
-        this.velocity = 75;
+        this.velocity = 175;
         this.size = 2;
         this.age = 0;
     }

@@ -100,20 +100,20 @@ class Game {
                 if (Utils.isCollided(rocket, asteroid)) {
                     this.asteroidField.rocketHitsAsteroid(rocket, asteroid);
                     if (this.asteroidField.asteroids.length === 0) {
-                        this._gameWon('You win!! P05tm4nFl4g');
+                        this._gameWon('Congratulations, you defeated all the bugs!');
                     }
                 }
             }
             if (Utils.isCollided(rocket, this.ship) && rocket.age > 0.4) {
                 this._gameOver(
-                    'Your ship was destroyed by one of your own rockets!'
+                    'Oops... Your ship was destroyed by one of your own rockets!'
                 );
             }
         }
 
         for (let asteroid of this.asteroidField.asteroids) {
             if (Utils.isCollided(asteroid, this.ship)) {
-                this._gameOver('Your ship was destroyed by an asteroid!');
+                this._gameOver('Oh no... Your ship was destroyed by a bug!');
             }
         }
     }
